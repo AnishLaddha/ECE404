@@ -1,6 +1,8 @@
 from BitVector import *
 from multiprocessing import Pool, cpu_count
 from tqdm import tqdm
+import time
+from cryptBreak import cryptBreak
 
 bsize = 16
 numbytes = bsize // 8
@@ -64,7 +66,14 @@ if __name__ == "__main__":
     results = tqdm(pool.imap(decrypt, keys_range), total=65536)
     tuple(results)
   
-  if g_key != 0:
-    print("\n\nFERRARI FOUND!!! KEY: ", g_key)
+  time.sleep(0.5)
 
+
+
+  
+  outputtext = cryptBreak("cipherText.txt", BitVector(intVal=g_key, size=bsize))
+  if g_key != 0:
+    print("\n\nKEY FOUND!!! KEY: ", g_key)
+  print("Text Output:\n")
+  print(outputtext)
 
