@@ -1,0 +1,30 @@
+For debugging purposes, we have listed selected outputs at various stages of DES below
+
+For debugging purposes, we have listed selected outputs at various stages of DES below
+
+1. First block of plaintext represented as a BitVector:
+Left Block (hex):   53637564
+Right Block (hex):  65726961
+
+2. First block of plaintext after expansion permutation in round 1/16  
+Right Block (hex):  b0aba4352b02
+
+3. First block of plaintext after XOR with round key in round 1/16
+Right Block (hex):  5015ca8ad7bc
+
+4. First block of plaintext after substitution with s-box in round 1/16 
+Right Block (hex):  63e62f15
+
+5. First block of plaintext after permuation with p-box in round 1/16
+Right Block (hex):  5261fbac
+
+6. First block of plaintext after xor with left block in round 1/16
+Right Block (hex):  01028ec8
+
+7. First block of plaintext after performing ONE round of the Feistel Structure
+Left Block (hex):   65726961
+Right Block (hex):  01028ec8
+
+8. First block of plaintext after performing ALL rounds of the Feistel Structure
+64-bit Block (hex): 0c46d7cd5b7efc31
+
