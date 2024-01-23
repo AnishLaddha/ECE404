@@ -7,7 +7,6 @@ class DES():
     self.key_bv = BitVector(textstring = key)
     
     
-    
     self.expansion_permutation = [
       31, 0, 1, 2, 3, 4,
       3, 4, 5, 6, 7, 8,
@@ -31,6 +30,7 @@ class DES():
       45,41,49,35,28,31
     ]
     self.shifts_for_round_key_gen = [1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1]
+
 
 
     self.s_boxes = {i:None for i in range(8)}
@@ -87,30 +87,31 @@ class DES():
       [2,1,14,7,4,10,8,13,15,12,9,0,3,5,6,11] 
       ]
     
+    self.p_box = [
+      15,6,19,20,28,11,27,16,
+      0,14,22,25,4,17,30,9,
+      1,7,23,13,31,26,2,8,
+      18,12,29,5,21,10,3,24
+    ]
+    
 
 
 
   def encrypt(self, message_file, output_file):
-    file = open(message_file, "r")
-    message_str = file.read()
-    file.close()
+    message_bv = BitVector(size=0)
+    with open(message_file, "r") as file:
+      message_bv += BitVector(textstring=file.read())
+    message_bv += BitVector(bitlist = ([0] * (64 - (message_bv.length()%64))))
 
-    message_bv = BitVector(textstring=message_str)
-    padding_size = 64 - (message_bv.length()%64)
-    pad_list = [0] * padding_size
-    message_bv += BitVector(bitlist = pad_list)
-
-    enc_bv = BitVector(size = 0)
-    bv = message_bv[0:64]
-    [left, right] = bv.divide_into_two()
-    print(right.get_bitvector_in_hex())
-    right = self._expand_permutation(right)
-    print(right.get_bitvector_in_hex())
     enc_key = self._get_56_bit_key(self.key_bv)
     round_keys = self._generate_round_keys(enc_key)
-    right_xored = right ^ round_keys[0]
-    print(right_xored.get_bitvector_in_hex())
+    cipher_bv = BitVector(size = 0)
+    for i in range(len(message_bv) // 64):
+      bv = message_bv[i*64:(i+1)*64]
+      cipher_bv += self._chunk_encrypt(bv, round_keys)
 
+    with open(output_file, "w") as file:
+      file.write(cipher_bv.get_bitvector_in_hex())
 
       
   def _expand_permutation(self, right):
@@ -130,12 +131,63 @@ class DES():
       key = Lkey+Rkey
       round_key = key.permute(self.key_permutation_2)
       round_keys.append(round_key)
-
     return round_keys
+  
+  def _substitute(self, expanded_bv):
+    output = BitVector(size=32)
+    segments = [expanded_bv[i*6:(i+1)*6] for i in range(8)]
+    for sindex in range(len(segments)):
+      row = 2*segments[sindex][0] + segments[sindex][-1]
+      col = int(segments[sindex][1:-1])
+      output[sindex*4:(sindex+1)*4] = BitVector(intVal=(self.s_boxes[sindex][row][col]), size = 4)
+    return output
+
+  def _p_box_permute(self, sbox_out):
+    return sbox_out.permute(self.p_box)
+  
+  def _feistel_function(self, left, right, round_key):
+    new_left = right.deep_copy()
+    new_right = self._expand_permutation(right)
+    new_right = new_right ^ round_key
+    new_right = self._substitute(new_right)
+    new_right = self._p_box_permute(new_right)
+    new_right = new_right^left
+
+    return [new_left, new_right]
+  
+  def _chunk_encrypt(self, bv, keys):
+    [left, right] = bv.divide_into_two()
+    new_left, new_right = left.deep_copy(), right.deep_copy()
+    for i in range(16):
+      [new_left, new_right] = self._feistel_function(new_left, new_right, keys[i])
+    enc_bv = new_right + new_left
+    return enc_bv
+  
+  def _chunk_decrypt(self, bv, keys):
+    [left, right] = bv.divide_into_two()
+
+    new_left, new_right = left.deep_copy(), right.deep_copy()
+    for i in range(15, -1, -1):
+      [new_left, new_right] = self._feistel_function(new_left, new_right, keys[i]) 
+    dec_bv = new_right + new_left
+    return dec_bv
 
 
   def decrypt(self, encrypted_file, output_file):
-    pass
+    encrypted_bv = BitVector(size=0)
+    with open(encrypted_file, "r") as file:
+      encrypted_bv += BitVector(hexstring=file.read())
+    encrypted_bv += BitVector(bitlist = ([0] * (64 - (encrypted_bv.length()%64))))
+
+    enc_key = self._get_56_bit_key(self.key_bv)
+    round_keys = self._generate_round_keys(enc_key)
+    decrypted_bv = BitVector(size = 0)
+    for i in range(len(encrypted_bv) // 64):
+      bv = encrypted_bv[i*64:(i+1)*64]
+      decrypted_bv += self._chunk_decrypt(bv, round_keys)
+
+    with open(output_file, "w") as file:
+      file.write(decrypted_bv.get_bitvector_in_ascii())
   
 
 
@@ -144,5 +196,14 @@ class DES():
 
 
 if __name__ == "__main__":
-  des = DES("zoomzoom")
-  des.encrypt("message.txt", "None")
+  if len(sys.argv) != 5:
+    print("python3 DES.py [flag: -e, -d] [input file] [key file] [output file]")
+  else:
+    key = ""
+    with open(sys.argv[3], "r") as file:
+      key = file.read()
+    des = DES(key)
+    if sys.argv[1] == "-e":
+      des.encrypt(sys.argv[2], sys.argv[4])
+    elif sys.argv[1] == "-d":
+      des.decrypt(sys.argv[2], sys.argv[4])
