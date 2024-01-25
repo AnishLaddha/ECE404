@@ -189,6 +189,50 @@ class DES():
     with open(output_file, "w") as file:
       file.write(decrypted_bv.get_bitvector_in_ascii())
   
+  def img_encrypt(self, img_file, output_file):
+    img_bv = BitVector(size = 0)
+    img_file = BitVector(filename = img_file)
+    count = 0
+    while(img_file.more_to_read):
+      img_bv += img_file.read_bits_from_file(2048)
+      count += 256
+    
+    header_bv, plain_bv = self._split_header(img_bv)
+    plain_bv += BitVector(bitlist = ([0] * (64 - (plain_bv.length()%64))))
+
+    enc_img = BitVector(size = 0)
+    enc_key = self._get_56_bit_key(self.key_bv)
+    round_keys = self._generate_round_keys(enc_key)
+    cipher_bv = BitVector(size = 0)
+    file = open(output_file, "wb")
+    for i in range(len(plain_bv) // 64):
+      bv = plain_bv[i*64:(i+1)*64]
+      enc_img += self._chunk_encrypt(bv, round_keys) 
+
+    enc_img = header_bv+enc_img
+    
+    enc_img.write_to_file(file)
+    file.close()
+
+
+  
+  def _split_header(self, img_bv):
+    header_bv = BitVector(size = 0)
+    plain_bv = BitVector(size = 0)
+
+    nl_count = 0
+    bytes = img_bv.length()//8
+    byte_count = 0
+    while nl_count < 3 and byte_count<bytes:
+      byte_bv = img_bv[byte_count*8:(byte_count+1)*8]
+      if(byte_bv.get_bitvector_in_ascii() == "\n"):
+        nl_count+=1
+      header_bv += byte_bv
+      byte_count+=1
+    plain_bv += img_bv[byte_count*8:]
+
+    return header_bv, plain_bv
+  
 
 
 
@@ -207,3 +251,5 @@ if __name__ == "__main__":
       des.encrypt(sys.argv[2], sys.argv[4])
     elif sys.argv[1] == "-d":
       des.decrypt(sys.argv[2], sys.argv[4])
+    elif sys.argv[1] == "-i":
+      des.img_encrypt(sys.argv[2], sys.argv[4])
