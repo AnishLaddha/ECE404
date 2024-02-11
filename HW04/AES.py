@@ -10,7 +10,6 @@ class AES():
 		key_bv = BitVector(textstring=key_str)
 		self.byte_sub_table, self.inv_byte_sub_table = self.gen_subbytes_table()
 		
-		# self.byte_sub_table_2d, self.inv_byte_sub_table_id = self.state_to_2d(self.byte_sub_table), self.state_to_2d(self.inv_byte_sub_table)
 		
 		self.key_schedule = self.generate_key_schedule(key_bv)
 		
@@ -40,10 +39,29 @@ class AES():
 			f.write(cipher_hex)
 		
 	def decrypt(self, ciphertext:str, decrypted:str) -> None:
-		pass
+		with open(ciphertext, "r") as f:
+			hex_str = f.read()
+			cipher_bv = BitVector(hexstring = hex_str)
+		
+		decrypt_bv = BitVector(size=0)
+
+		cipher_len = cipher_bv.length()
+		for i in range(cipher_len//128):
+			cipher_chunk = cipher_bv[(i*128):(i+1)*128]
+			plain_chunk = self.decrypt_block(cipher_chunk)
+			decrypt_bv += plain_chunk
+		
+		with open(decrypted, "w") as f:
+			decrypted_str = decrypt_bv.get_bitvector_in_ascii()
+			f.write(decrypted_str)
 	
 	def pre_rounds(self, bv):
 		first_four_word = self.key_schedule[0] + self.key_schedule[1] + self.key_schedule[2] + self.key_schedule[3]
+		first_four_xor = first_four_word ^ bv
+		return first_four_xor
+	
+	def inv_pre_rounds(self, bv):
+		first_four_word = self.key_schedule[56] + self.key_schedule[57] + self.key_schedule[58] + self.key_schedule[59]
 		first_four_xor = first_four_word ^ bv
 		return first_four_xor
 	
@@ -55,6 +73,14 @@ class AES():
 			subbed_bytes += BitVector(size = 8, intVal = sub_byte)
 		return subbed_bytes
 	
+	def inv_subbytes(self, bv):
+		unsubbed_bytes = BitVector(size = 0)
+		for i in range(bv.length() // 8):
+			byte = bv[(i*8):(i+1)*8]
+			unsub_byte = self.inv_byte_sub_table[byte.intValue()]
+			unsubbed_bytes += BitVector(size = 8, intVal = unsub_byte)
+		return unsubbed_bytes
+	
 	def shift_rows(self, bv):
 		shifted_row = BitVector(size=0)
 		for col in range(4):
@@ -62,6 +88,14 @@ class AES():
 				s = (row*5 + col*4) % 16
 				shifted_row += bv[s*8:(s+1)*8]
 		return shifted_row
+	
+	def inv_shift_rows(self, bv):
+		unshifted_row = BitVector(size = 0)
+		for col in range(4):
+			for row in range(4):
+				s = (4*col - 3*row) % 16
+				unshifted_row += bv[s*8:(s+1)*8]
+		return unshifted_row
 	
 	def mix_cols(self, bv):
 		mixed_cols = BitVector(size = 0)
@@ -78,9 +112,33 @@ class AES():
 		
 		return mixed_cols
 	
+	def inv_mix_cols(self, bv):
+		unmixed_cols = BitVector(size = 0)
+		for col in range(4):
+			for row in range(4):
+				rows = [((row+i)%4) for i in range(4)]
+				pos = [(col*4 + r) for r in rows]
+				bv_pos = [bv[(i*8):(i+1)*8] for i in pos]
+				bv_pos[0] = bv_pos[0].gf_multiply_modular(BitVector(hexstring = "0E"), self.AES_modulus, 8)
+				bv_pos[1] = bv_pos[1].gf_multiply_modular(BitVector(hexstring = "0B"), self.AES_modulus, 8)
+				bv_pos[2] = bv_pos[2].gf_multiply_modular(BitVector(hexstring = "0D"), self.AES_modulus, 8)
+				bv_pos[3] = bv_pos[3].gf_multiply_modular(BitVector(hexstring = "09"), self.AES_modulus, 8)
+				byte = bv_pos[0] ^ bv_pos[1] ^ bv_pos[2] ^ bv_pos[3]
+				unmixed_cols += byte
+		
+		return unmixed_cols
+	
 	def xor_round_keys(self, round, bv):
 		round_key = BitVector(size = 0)
 		key_arr = self.key_schedule[4*round:4*(round+1)]
+		for k in key_arr:
+			round_key+=k
+		return bv^round_key
+	
+	def inv_xor_round_keys(self, round, bv):
+		round_key = BitVector(size = 0)
+		start, end = 60-4*(round+1), 60-4*(round)
+		key_arr = self.key_schedule[start:end]
 		for k in key_arr:
 			round_key+=k
 		return bv^round_key
@@ -91,10 +149,25 @@ class AES():
 		for i in range(1,15):
 			subbed = self.subbytes(hold)
 			shift_rowed = self.shift_rows(subbed)
-			mix_coled = self.mix_cols(shift_rowed)
-			hold = self.xor_round_keys(i, mix_coled)
+			if i != 14:
+				mix_coled = self.mix_cols(shift_rowed)
+				hold = self.xor_round_keys(i, mix_coled)
+			else:
+				hold = self.xor_round_keys(i, shift_rowed)
 		return hold
-		
+	
+	def decrypt_block(self, plain_block):
+		pre_xor = self.inv_pre_rounds(plain_block)
+		hold = pre_xor.deep_copy()
+		for i in range(1,15):
+			shift_rowed = self.inv_shift_rows(hold)
+			subbed = self.inv_subbytes(shift_rowed)
+			xored = self.inv_xor_round_keys(i, subbed)
+			if i!=14:
+				hold = self.inv_mix_cols(xored)
+			else:
+				hold = xored
+		return hold
 
 
 
@@ -153,20 +226,13 @@ class AES():
 		round_constant = round_constant.gf_multiply_modular(BitVector(intVal = 0x02), self.AES_modulus, 8)
 		return newword, round_constant
 	
-	def state_to_2d(self, state_list):
-		array_2d = [[0 for _ in range(16)] for _ in range(16)]
-		for i in range(16):
-			for j in range(16):
-				array_2d[i][j] = state_list[i * 16 + j]
-		
-		return array_2d
 
 
 if __name__ == "__main__":
 	cipher = AES(keyfile = sys.argv[3])
 	if sys.argv[1] == "-e": 
 		cipher.encrypt(plaintext=sys.argv[2], ciphertext=sys.argv[4]) 
-	# elif sys.argv[1] == "-d":
-	# 	cipher.decrypt(ciphertext=sys.argv[2], decrypted=sys.argv[4]) 
-	# else:
-	# 	sys.exit("Incorrect Command -Line Syntax")
+	elif sys.argv[1] == "-d":
+		cipher.decrypt(ciphertext=sys.argv[2], decrypted=sys.argv[4]) 
+	else:
+		sys.exit("Incorrect Command -Line Syntax")
