@@ -13,10 +13,6 @@ class AES():
 		
 		self.key_schedule = self.generate_key_schedule(key_bv)
 		
-
-		# for i in range(len(self.key_schedule)):
-		# 	print(i, len(self.key_schedule[i]), self.key_schedule[i])
-
 	def encrypt(self, plaintext:str, ciphertext:str) -> None:
 		with open(plaintext, "r") as f:
 			plaintext_bv = BitVector(textstring=f.read())
@@ -226,6 +222,53 @@ class AES():
 		round_constant = round_constant.gf_multiply_modular(BitVector(intVal = 0x02), self.AES_modulus, 8)
 		return newword, round_constant
 	
+	def ctr_aes_image(self , iv , image_file , enc_image):
+		img_bv = BitVector(size = 0)
+		img_file = BitVector(filename = image_file)
+		count = 0
+		while(img_file.more_to_read):
+			img_bv += img_file.read_bits_from_file(2048)
+			count += 256
+		header_bv, plain_bv = self._split_header(img_bv)
+		if plain_bv.length()%128 != 0:
+			plain_bv += BitVector(bitlist = ([0] * (128 - (plain_bv.length()%128))))
+		f = open(enc_image, "wb")
+		header_bv.write_to_file(f)
+		for i in range(plain_bv.length() // 128):
+			plain_block = plain_bv[i*128:(i+1)*128]
+			enc_block = self.encrypt_block(iv)
+			enc_block = enc_block ^ plain_block
+			enc_block.write_to_file(f)
+			iv = BitVector(intVal = (int(iv)+1))		
+		f.close()
+
+
+
+	def x931(self , v0 , dt , totalNum , outfile):
+		i_bv = self.encrypt_block(dt)
+		v = v0
+		f = open(outfile, "w")
+		for n in range(totalNum):
+			r = self.encrypt_block(i_bv ^ v)
+			f.write(str(int(r)) + "\n")
+			v = self.encrypt_block((r^i_bv))
+			
+	def _split_header(self, img_bv):
+		header_bv = BitVector(size = 0)
+		plain_bv = BitVector(size = 0)
+		
+		nl_count = 0
+		bytes = img_bv.length()//8
+		byte_count = 0
+		while nl_count < 3 and byte_count<bytes:
+			byte_bv = img_bv[byte_count*8:(byte_count+1)*8]
+			if(byte_bv.get_bitvector_in_ascii() == "\n"):
+				nl_count+=1
+			header_bv += byte_bv
+			byte_count+=1
+
+		plain_bv += img_bv[byte_count*8:]
+		return header_bv, plain_bv
 
 
 if __name__ == "__main__":
@@ -234,5 +277,7 @@ if __name__ == "__main__":
 		cipher.encrypt(plaintext=sys.argv[2], ciphertext=sys.argv[4]) 
 	elif sys.argv[1] == "-d":
 		cipher.decrypt(ciphertext=sys.argv[2], decrypted=sys.argv[4]) 
+	elif sys.argv[1] == "-i":
+		cipher.ctr_aes_image(iv= BitVector(textstring="counter-mode-ctr"), image_file=sys.argv[2], enc_image=sys.argv[4])
 	else:
-		sys.exit("Incorrect Command -Line Syntax")
+		cipher.x931(v0=BitVector(textstring="counter-mode-ctr"), dt=BitVector(intVal=501 ,size=128), totalNum=int(sys.argv[2]), outfile=sys.argv[4])
