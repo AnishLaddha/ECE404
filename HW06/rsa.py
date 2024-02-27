@@ -83,8 +83,6 @@ class RSA():
             cipher_int = pow(msg_int,self.e, self.n)
             cipher_bv = BitVector(intVal=cipher_int, size=256)
             f.write(cipher_bv.get_bitvector_in_hex())
-            # if i <10:
-            #     print(cipher_bv)        
         f.close()
 
 
