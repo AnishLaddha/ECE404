@@ -118,7 +118,11 @@ char * clientComm(int clntSockfd,int * senderBuffSize_addr, int * optlen_addr){
         exit(1);
     }    
 
-    strcpy(str, recvBuff);
+    strncpy(str, recvBuff, 28);
+	//originally, we had strcpy(str,recvbuff) this was vulnerable to buffer overflows as it keeps copying until a \0
+	//this is obviously very bad, as we were able to generate a string that overflowed the buffer to a different function
+	//by using strn copy, we copy a set amount (this case 28), which is good because we need more bytes than that to overflow
+	//this removes that vector of attack
 	
     /* send data to the client */
     if (send(clntSockfd, str, strlen(str), 0) == -1) {
