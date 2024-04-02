@@ -1,0 +1,108 @@
+SHELL=/bin/sh
+PATH=/usr/local/lib/mh:$PATH
+MAILDIR=$HOME/Mail
+LOGFILE=$HOME/Mail/logfile
+SENDMAIL=/usr/sbin/sendmail
+#VERBOSE=1
+VERBOSE=0
+EOL="
+"
+LOG="$EOL$EOL$EOL"
+LOG="New message log:$EOL"
+LOG=`perl GET_MESSAGE_INDEX`
+LOG="$EOL"
+
+
+
+## Recipe_1:
+##
+:0 :
+* ^From.*purdue\.edu
+* ^Subject.*404
+my404Folder
+
+
+
+## Recipe_2:
+##
+## This recipe will only be invoked if the subject line
+## constains the string 'sports' This email will go into
+## your mailbox for the special account.  You need to
+## replace the 'your_special_account_name' string with what
+## applies to you
+##
+:0 :
+* ^Subject.*sports
+/var/mail/ece404m6
+
+
+
+## Recipe_3:
+##
+## This is an emailing recipe.  It will send to your regular
+## Purdue webmail account all messages that originate from
+## the purdue.edu domain and that have survived the previous
+## recipes.
+##
+##
+## IMPORTANT NOTE: The email address in the last line of the
+## recipe is your Purdue webmail address --- the address on
+## which you normally receive your email DO NOT put your
+## special account name in that line since that would create
+## an infinite loop.
+##
+:0 :
+* ^From.*(purdue\.edu[ ]|purdue\.edu>)
+!laddhaa@purdue.edu
+
+
+
+## Recipe_4:
+##
+## This is one of the recipes in your instructor's spam
+## filter. If your drug related spam does not originate from
+## Purdue, this recipe will kick in.  
+##
+## IMPORTANT: Since spammers fake their headers, a spam
+## message actually coming from outside Purdue may still
+## look like it is coming from Purdue.
+##
+:0 B
+* < 10000
+* (\<v.codin\>|\<viicodin\>|\<vi.?c0[^a-z]din\>|\<vi.?codin.?\>|v[^a-z]codin|\<..?a1ium\>|\<val.?iu.?m\>|\<v@[^a-z]ium\>|\<vi0xx\>|va-[^a-z]ium|\<va1[ ]?[ ]?ium\>|\<valliuum\>|\<pr.ozac\>|\<vall.um\>|\<amb.jen\>|\<ui.tram\>|\<pro.zac\>|\<val..um\>|\<val...um\>|\<pr...zac\>|>mbie.n|\<v a l|\<va..um\>|\<v.alium\>|\<va.llum\>|\<va.ll.?um\>|\<va.lium\>|\<vali.um\>|\<przoac|\<levtira|\<zolotf|lorazpeam|prozaac)
+* (\<vi.gra\>|\<v1a[^a-z]gra\>|[^a-z]/iaa?gra\>|\<vii?aa?graa?|\<v[^a-z]agra\>|\<via[ ][ ]?gra\>|\<vi[ ]+graa?|\<v..agra\>|\<v.agg?ra\>|\<v.agr..a|>i.agra|g r a|v i a|\<vi..ra\>|\<v.iagra\>|\<v..agra\>|\<v..agra\>|\<viag.ra\>|\<vaigra|\<vair.a\>|\<vai..ra\>|\<vai.?gra\>)
+* (\<cialli.s\>|\<cia[^a-z]ii?s\>|\<cia[ ]?[ ]?1is\>|\<cia.?l.?is\>|\<cai[ ]+llis\>|\<xa.?naa?x\>|\<xan[ ]?ax\>|\<x[^a-z]an@x\>|\<meds\>|\<[0-9]o-?%|codeinn?e|\<c..alis\>|\<xa.nax\>|\<c.all.s\>|\<xan...ax\>|a.nax\>|i.alis\>|a l [it] s|c [it] a l|c / a|l / s|\<ci...lis\>|\<c.ialis\>|\<ci.alls\>|\<c..al.s\>|\<cial.is\>|\<cailis|\<caillis|\<xnaax|\<ca.ilis\>)
+* (http://|\<www\>)
+{
+  LOG="Email Trashed by Recipe_4$EOL"
+
+  :0 :
+  /dev/null
+}
+
+
+
+## Recipe_5:
+##
+## This is another recipe from your instructor's spam filter
+##
+:0 HB
+* charset="koi8-r"
+{
+  LOG="Email trashed because it is in Russian$EOL"
+
+  :0 :
+  /dev/null
+}
+
+
+
+## Recipe_6:
+## 
+## The rest of the email to your special account will be 
+## deposited in the file spamFolder
+##
+:0 :
+spamFolder
+
+
