@@ -15,18 +15,27 @@ LOG="$EOL"
 ##### MY RECIPES
 
 ## Recipe 1 start
+# In this rule, we do not specify the flag, as by default it searches the header
+# The condition first looks for the From, in the header, doesn't care about anything until the first <, which is the beginning of the first email
+# Then the <*@*> means that it will look for an email, not caring about the email username or domain name
+# Finally, it looks for the comma. If there is a comma, that implies there are multiple emails, which means it will catch it in recipe 1
 :0 :
 * ^From.*<*@*>,
 recipe_1
 ##Recipe 1 end
 
 ## Recipe 2 start
+# This rule searches the header again, except it looks at the subject for common spam words.
+# Things like diploma, degree, medication, viagra, buy, or hostway
+# I also look account for capitalizations, the brackets, and common misspellings
 :0 :
 * ^Subject.*([dD]iploma|[dD]egree|[mM]edication|[vV][ij]a[qg][rR]+a|[bB]uy|[hH]ostway)
 recipe_2
 ## Recipe 2 end
 
 ## Recipe 3 start
+# This rule searches the Body of the message, as indicated by the B flag
+# Then, in the body, we look for words like casino or gold, which indicate gambling/gold related spam
 :0 B:
 * (casino|gold) 
 recipe_3
@@ -34,6 +43,10 @@ recipe_3
 ## Recipe 3 end
 
 ##Recipe 4 start
+#for this recipe, we search both the body and the header, as indicated by the HB flag
+#we have 2 conditions, both must be true for it to be caught by the recipe
+#first we look for text/plain, then text/html
+#This indicates there are multiple kinds of content, which indicates that it could be spam 
 :0 HB:
 * ^Content-Type: text/plain
 * ^Content-Type: text/html
