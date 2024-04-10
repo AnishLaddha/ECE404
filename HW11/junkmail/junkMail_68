@@ -1,0 +1,99 @@
+From bounce.149091884@gorkanadatabase.com Wed Jan 30 11:56:51 2013
+Received: from mx05.ecn.purdue.edu (mx05.ecn.purdue.edu [128.46.88.3])
+	by rvl4.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r0UGupj2018422
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@rvl4.ecn.purdue.edu>; Wed, 30 Jan 2013 11:56:51 -0500 (EST)
+Received: from mailhub249.itcs.purdue.edu (mailhub249.itcs.purdue.edu [128.210.5.249])
+	by mx05.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r0UGucYm015267
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@ecn.purdue.edu>; Wed, 30 Jan 2013 11:56:38 -0500
+Received: from mail1.bemta3.messagelabs.com (mail1.bemta3.messagelabs.com [195.245.230.34])
+	by mailhub249.itcs.purdue.edu (8.14.4/8.14.4/mta.smtp.purdue.edu) with ESMTP id r0UGuYcb008026
+	for <kak@purdue.edu>; Wed, 30 Jan 2013 11:56:36 -0500
+Received: from [85.158.137.3:25840] by server-15.bemta-3.messagelabs.com id 3E/C6-25405-0C059015; Wed, 30 Jan 2013 16:56:32 +0000
+X-Env-Sender: bounce.149091884@gorkanadatabase.com
+X-Msg-Ref: server-9.tower-38.messagelabs.com!1359564991!15471754!1
+X-Originating-IP: [195.248.81.102]
+X-StarScan-Received:
+X-StarScan-Version: 6.7; banners=-,-,-
+X-VirusChecked: Checked
+Received: (qmail 30110 invoked from network); 30 Jan 2013 16:56:31 -0000
+Received: from unknown (HELO vmx-grk-mta02.durrants.co.uk) (195.248.81.102)
+  by server-9.tower-38.messagelabs.com with AES256-SHA encrypted SMTP; 30 Jan 2013 16:56:31 -0000
+Received: from [::1] (helo=localhost.localdomain)
+	by vmx-grk-mta02.durrants.co.uk with esmtp (Exim 4.71)
+	(envelope-from <bounce.149091884@gorkanadatabase.com>)
+	id 1U0b8s-0007tx-O3
+	for kak@purdue.edu; Wed, 30 Jan 2013 17:08:10 +0000
+Date: Wed, 30 Jan 2013 17:08:10 +0000
+To: Avinash Kak <kak@purdue.edu>
+From: "claire.booty@ovum.com" <claire.booty@ovum.com>
+Message-ID: <792d156552473e3510e35109d7bacf64@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.0 (phpmailer.codeworxtech.com)
+Subject: Ovum comments: BB10 has launched - initial reaction
+X-mailqueue_sent_to_smtp_queue_datetime: Wed, 30 Jan 2013 17:08:10 +0000+
+X-mailqueue-entity_type: ACTIVITY
+X-mailqueue-entity_id: 956318
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_792d156552473e3510e35109d7bacf64"
+X-PMX-Version: 5.5.9.388399
+X-PerlMx-Virus-Scanned: Yes
+X-ECN-MailServer-VirusScanned: by amavisd-new
+X-ECN-MailServer-Origination: mailhub249.itcs.purdue.edu [128.210.5.249]
+X-ECN-MailServer-SpamScanAdvice: DoNotScan
+
+
+--b1_792d156552473e3510e35109d7bacf64
+Content-Type: text/plain; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+BB10 has launched.Â Adam Leach, principal analyst at Ovum, provides his initial reaction:
+
+âThe Blackberry 10 platform offers a differentiated user experience in todayâs crowded and homogenous smartphone market. The Blackberry Z10 and Q10 will stand out from the Android masses and look distinct from Appleâs iPhone. The user experience of Blackberry 10 introduces some nice new features but importantly builds on Blackberryâs UI heritage and therefore will certainly appeal to existing Blackberry users. However, the challenge for the company will be to attract new users and those that have already moved to alternative smartphones.
+
+"Blackberry has rightly focused on insuring that the Blackberry 10 devices have a large catalogue of content and applications which is now essential for any modern smartphone, and achieving 70,000 applications at the launch of a new platform is good start.
+
+"However, Ovum believes that despite a well-designed Blackberry 10 platform, that will certainly attract short-term interest from existing users the company will struggle to appeal to a wider audience and in the long-term will become a niche player in the smartphone market."
+
+Â 
+
+To speak to an Ovum device analyst, please contact Claire Booty on +44 (0) 20 7017 7916, or emailÂ claire.booty@ovum.com
+
+ABOUT OVUM
+
+Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions. Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.
+
+
+--b1_792d156552473e3510e35109d7bacf64
+Content-Type: text/html; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<p>
+			<span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">BB10 has launched.&nbsp;</span><strong style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Adam Leach, principal analyst at Ovum</strong><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">, provides his initial reaction:</span></p>
+		<p>
+			<em><span style="font-size: 10pt;"><span style="font-family: arial, helvetica, sans-serif;">&ldquo;The Blackberry 10 platform offers a differentiated user experience in today&rsquo;s crowded and homogenous smartphone market. The Blackberry Z10 and Q10 will stand out from the Android masses and look distinct from Apple&rsquo;s iPhone. The user experience of Blackberry 10 introduces some nice new features but importantly builds on Blackberry&rsquo;s UI heritage and therefore will certainly appeal to existing Blackberry users. However, the challenge for the company will be to attract new users and those that have already moved to alternative smartphones.</span></span></em></p>
+		<p>
+			<em><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">&quot;Blackberry has rightly focused on insuring that the Blackberry 10 devices have a large catalogue of content and applications which is now essential for any modern smartphone, and achieving 70,000 applications at the launch of a new platform is good start.</span></em></p>
+		<p>
+			<em><span style="font-size: 10pt;"><span style="font-family: arial, helvetica, sans-serif;">&quot;</span></span><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">However, Ovum believes that despite a well-designed Blackberry 10 platform, that will certainly attract short-term interest from existing users the company will struggle to appeal to a wider audience and in the long-term will become a niche player in the smartphone market.&quot;</span></em></p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">To speak to an Ovum device analyst, please contact Claire Booty on +44 (0) 20 7017 7916, or email&nbsp;</span><a href="mailto:claire.booty@ovum.com" style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">claire.booty@ovum.com</a></p>
+		<p>
+			<span style="font-size: 10pt;"><span style="font-family: arial, helvetica, sans-serif;"><a href="http://mediatlasei.prnewswire.com/Url.aspx?519746x4434284x-1787828"><strong><span style="color: blue;">ABOUT OVUM</span></strong></a></span></span></p>
+		<p>
+			<span style="font-size: 10pt;"><span style="font-family: arial, helvetica, sans-serif;">Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions. Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.</span></span></p>
+	</body>
+</html><img src="http://www.sentpressrelease.com/email/track/?hash=8bf3f3be722ecf1170cce889957b8f6648ae2dff7a210b8eae85b7e0d655ddc7" alt="" />
+
+
+
+--b1_792d156552473e3510e35109d7bacf64--

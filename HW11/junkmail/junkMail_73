@@ -1,0 +1,74 @@
+From bacampbell@embarqmail.com Sat Feb 16 07:16:15 2013
+Received: from mx03.ecn.purdue.edu (mx03.ecn.purdue.edu [128.46.105.218])
+	by rvl4.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r1GCGFJT018942
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@rvl4.ecn.purdue.edu>; Sat, 16 Feb 2013 07:16:15 -0500 (EST)
+Received: from mailhub248.itcs.purdue.edu (mailhub248.itcs.purdue.edu [128.210.5.248])
+	by mx03.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r1GCFXdr004827
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@ecn.purdue.edu>; Sat, 16 Feb 2013 07:15:33 -0500
+Received: from mailrelay.embarq.synacor.com (mailrelay.embarq.synacor.com [208.47.184.3])
+	by mailhub248.itcs.purdue.edu (8.14.4/8.14.4/mta.smtp.purdue.edu) with ESMTP id r1GCFCpT000923
+	for <kak@purdue.edu>; Sat, 16 Feb 2013 07:15:32 -0500
+DKIM-Signature: v=1; a=rsa-sha1; d=embarqmail.com; s=s012408; c=relaxed/simple;
+	q=dns/txt; i=@embarqmail.com; t=1361016912;
+	h=From:Subject:Date:To:MIME-Version:Content-Type;
+	bh=6RLAUWwLb1VPGH5sOz9/PrFvXtk=;
+	b=Z4TxV2n6nLV6DBTX8XPiecToXGGV1wUlW5BYYFcdslhAkNaZwe62cj/yS1a1XB+N
+	WwCRbeEuKxKLpiRqFjNEZrT394qi+O4R92GPIQyyCdV9aRC/4Z1zYnx1mBqjAptL;
+X_CMAE_Category: 0,0 Undefined,Undefined
+X-CNFS-Analysis: v=2.0 cv=OLulLFmB c=1 sm=0 a=fLM9a0Jta1IA:10 a=FKkrIqjQGGEA:10 a=qrnaJn3xfOUA:10 a=1poGYrevpj8A:10 a=1oqGTYSLAAAA:8 a=K-v-2zaBAAAA:8 a=qj-T_b0SyZUA:10 a=Lc-NhTzGAAAA:20 a=lSKdzOPw0fa9XfQtpvwA:9 a=QEXdDO2ut3YA:10 a=gY7WpX5gNp0ULHim:21 a=RLToicSgf1BzydbU:21 a=yvYcefpD1PPKEEybsQEA:9 a=_W_S_7VecoQA:10 a=OXJSqBFtBcf5XEqp:21 a=kpI8KqxQqOJRhstE:21 a=M2_xLB11Pc0Gzg5A:21 a=Hhc/OnKmOS1xKI2oHPQhqg==:117
+X-CM-Score: 0
+X-Scanned-by: Cloudmark Authority Engine
+Received: from [10.50.3.117] ([10.50.3.117:58604] helo=md33.embarq.synacor.com)
+	by mailrelay.embarq.synacor.com (envelope-from <bacampbell@embarqmail.com>)
+	(ecelerity 2.2.3.49 r(42060/42061)) with ESMTP
+	id 5A/D6-10159-E487F115; Sat, 16 Feb 2013 07:15:11 -0500
+Date: Sat, 16 Feb 2013 07:15:10 -0500 (EST)
+From: Purdue University Account Verification <bacampbell@embarqmail.com>
+To: update@purdue.edu
+Message-ID: <2047142815.1623538.1361016910344.JavaMail.root@md33.embarq.synacor.com>
+Subject: Re: Purdue University Account Certificate expired on the
+ 15th-02-2013
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1623537_2076435795.1361016910342"
+X-Originating-IP: [103.9.151.82]
+X-Mailer: Zimbra 6.0.5_GA_2328.RHEL5_64 (ZimbraWebClient - SAF3 (Win)/6.0.15_GA_2995)
+X-PMX-Version: 5.5.9.388399
+X-PerlMx-Virus-Scanned: Yes
+X-ECN-MailServer-VirusScanned: by amavisd-new
+X-ECN-MailServer-Origination: mailhub248.itcs.purdue.edu [128.210.5.248]
+X-ECN-MailServer-SpamScanAdvice: DoNotScan
+
+------=_Part_1623537_2076435795.1361016910342
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+
+Dear Purdue University Customer, 
+
+Your Purdue University Email account Certificate expired on the 15th-02-2013, This may interrupt your 
+email delivery configuration, and account POP settings, page error when sending message. 
+
+To re-new your Purdue University webmail Certificate, Please take a second to update your records by 
+following the reference link below 
+
+
+copy and paste link on address bar : 
+
+https://docs.google.com/forms/d/1xoCrIHYKFTS5idzDNoW9ZrxnqszPVhv4X7S99kF7jP8/viewform?pli=1 
+
+
+Once the information provided matches what is on our record, Your 
+Purdue University account will work as normal after the verification process, and 
+your webmail Certificate will be re-newed. 
+
+Sincerely, 
+Mail Service Team 
+------=_Part_1623537_2076435795.1361016910342
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><style type='text/css'>p { margin: 0; }</style></head><body><div style='font-family: times new roman,new york,times,serif; font-size: 12pt; color: #000000'><span class="Apple-style-span" style="font-family: Tahoma; font-size: 13px; "><div style="text-indent: 0px !important; ">Dear Purdue University Customer,</div><div style="text-indent: 0px !important; ">&nbsp;</div><div style="text-indent: 0px !important; ">Your Purdue University Email account Certificate expired on the 15th-02-2013, This may interrupt your</div><div style="text-indent: 0px !important; ">email delivery configuration, and account POP settings, page error when sending message.</div><div style="text-indent: 0px !important; ">&nbsp;</div><div style="text-indent: 0px !important; ">To re-new your Purdue University webmail Certificate, Please take a second to update your records by</div><div style="text-indent: 0px !important; ">following the reference link below</div><div style="text-indent: 0px !important; "><br style="text-indent: 0px !important; "></div><div style="text-indent: 0px !important; ">copy and paste link on address bar :</div><div style="text-indent: 0px !important; ">&nbsp;</div><div style="text-indent: 0px !important; "><font class="Apple-style-span" color="#953734" size="2" style="text-indent: 0px !important; "><u style="text-indent: 0px !important; "><b style="text-indent: 0px !important; ">https://docs.google.com/forms/d/1xoCrIHYKFTS5idzDNoW9ZrxnqszPVhv4X7S99kF7jP8/viewform?pli=1</b></u></font></div><div style="text-indent: 0px !important; "><font class="Apple-style-span" color="#953734" style="text-indent: 0px !important; "><br style="text-indent: 0px !important; "></font></div><div style="text-indent: 0px !important; ">Once the information provided matches what is on our record, Your</div><div style="text-indent: 0px !important; ">Purdue University account will work as normal after the verification process, and</div><div style="text-indent: 0px !important; ">your webmail Certificate will be re-newed.</div><div style="text-indent: 0px !important; ">&nbsp;</div><div style="text-indent: 0px !important; ">Sincerely,</div><div style="text-indent: 0px !important; ">Mail Service Team</div></span></div></body></html>
+------=_Part_1623537_2076435795.1361016910342--

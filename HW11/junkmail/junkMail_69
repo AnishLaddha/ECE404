@@ -1,0 +1,131 @@
+From bounce.149728891@gorkanadatabase.com Mon Feb  4 12:08:55 2013
+Received: from mx01.ecn.purdue.edu (mx01.ecn.purdue.edu [128.46.154.8])
+	by rvl4.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r14H8tkL022930
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@rvl4.ecn.purdue.edu>; Mon, 4 Feb 2013 12:08:55 -0500 (EST)
+Received: from mailhub249.itcs.purdue.edu (mailhub249.itcs.purdue.edu [128.210.5.249])
+	by mx01.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r14H8L4D011653
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@ecn.purdue.edu>; Mon, 4 Feb 2013 12:08:22 -0500
+Received: from mail1.bemta3.messagelabs.com (mail1.bemta3.messagelabs.com [195.245.230.34])
+	by mailhub249.itcs.purdue.edu (8.14.4/8.14.4/mta.smtp.purdue.edu) with ESMTP id r14H8IoS001218
+	for <kak@purdue.edu>; Mon, 4 Feb 2013 12:08:19 -0500
+Received: from [85.158.137.3:27394] by server-7.bemta-3.messagelabs.com id 9B/97-10367-20BEF015; Mon, 04 Feb 2013 17:08:18 +0000
+X-Env-Sender: bounce.149728891@gorkanadatabase.com
+X-Msg-Ref: server-9.tower-38.messagelabs.com!1359997697!16411972!1
+X-Originating-IP: [195.248.81.102]
+X-StarScan-Received:
+X-StarScan-Version: 6.7; banners=-,-,-
+X-VirusChecked: Checked
+Received: (qmail 25049 invoked from network); 4 Feb 2013 17:08:17 -0000
+Received: from unknown (HELO vmx-grk-mta02.durrants.co.uk) (195.248.81.102)
+  by server-9.tower-38.messagelabs.com with AES256-SHA encrypted SMTP; 4 Feb 2013 17:08:17 -0000
+Received: from [::1] (helo=localhost.localdomain)
+	by vmx-grk-mta02.durrants.co.uk with esmtp (Exim 4.71)
+	(envelope-from <bounce.149728891@gorkanadatabase.com>)
+	id 1U2PiE-0005pD-DN
+	for kak@purdue.edu; Mon, 04 Feb 2013 17:20:10 +0000
+Date: Mon, 4 Feb 2013 17:20:10 +0000
+To: Avinash Kak <kak@purdue.edu>
+From: "claire.booty@ovum.com" <claire.booty@ovum.com>
+Message-ID: <6723c77b93f59d694c9bd388a386ad8f@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.0 (phpmailer.codeworxtech.com)
+Subject: Ovum comments: Oracle to acquire vendor Acme Packets
+X-mailqueue_sent_to_smtp_queue_datetime: Mon, 04 Feb 2013 17:20:10 +0000+
+X-mailqueue-entity_type: ACTIVITY
+X-mailqueue-entity_id: 957261
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_6723c77b93f59d694c9bd388a386ad8f"
+X-PMX-Version: 5.5.9.388399
+X-PerlMx-Virus-Scanned: Yes
+X-ECN-MailServer-VirusScanned: by amavisd-new
+X-ECN-MailServer-Origination: mailhub249.itcs.purdue.edu [128.210.5.249]
+X-ECN-MailServer-SpamScanAdvice: DoNotScan
+
+
+--b1_6723c77b93f59d694c9bd388a386ad8f
+Content-Type: text/plain; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+Oracle has announced its intent to acquire vendor Acme Packets. Dana Cooperson, principal analyst believes the acquisition should strengthen Oracleâs hand both with enterprises and carriers by giving it a more central role in controlling and improving how devices and subscribers interact and communicate.
+
+Cooperson comments:
+
+âOracleâs move to acquire Acme Packets illustrates several very important on-going trends in global communications:
+
+Â·Â Â Â Â Â Â Â Â  âIT and Telecom are rapidly blending: Telecom and IT are coming together in ways that are shifting the vendor competitive framework significantly. IT-focused companies like Oracle see a real opportunity to strengthen their position in both markets through extending their product lines and are acting aggressively. Companies that specialize in either telecom or IT will need a strategy of how they will benefit from this blending of what were two largely separate domains. Any vendor that wants to be a full-service partner to the telcos and other large communications and content providers will need such a blended strategy to be credible. Specialists will need to align with full-service partners.
+
+Â·Â Â Â Â Â Â Â Â  âSoftware increasingly driving network capabilities: Although hardware is still important in many applications to provide needed performance, software is more and more critical for both differentiating and monetizing network capabilities. Performance without monetization is only half the equation.
+
+Â·Â Â Â Â Â Â Â Â  âCommunications needs are anytime, anywhere: People want to be connected, at work or at play, through a variety of devices and access means. Controlling these sessions securely and at the needed quality is increasingly critical.â
+
+Cooperson added: âOracle Communications has a value proposition that encompasses telcos, enterprises, and other ICT (information and communications technology) infrastructure vendors. In fact, Oracle both sells to and competes with telecom infrastructure vendors. But unlike many of these companies, Oracle has a comparatively large bucket of cash to use for acquisitionsâ as a communications infrastructure vendor bested only by Cisco. Oracle and Cisco can both afford to be aggressive with M&A whereas many of their peers cannot. Expect the buying spree to continue.â
+
+Meanwhile according to research by Principal Analyst, Matt Walker telecom-centric vendors are having a tough time, again, as in the last several quarters they have seen margins decrease significantly; 4Q12 earnings issued to date have not reversed the trend:
+
+âEven with some consolidation and extensive layoffs, several big vendors (e.g., Alcatel-Lucent) are hurting. A weak capex climate among service providers has worsened the outlook, as has the continued growth of Huawei. Ovumâs latest forecast calls for telecom capex bumps in some country markets, but Chinese vendors are positioned well in many of these. In the near-term, vendor earnings should be watched closely, with an eye on both margins and cash conservation. In the longer-term, consolidation will help, but this is never easy; slow integration is the biggest challenge to this approach. Looking ahead to âwhat you want to be when you grow upâ is a better approach as the IT and telecom worlds converge. This blending impacts network design, product choice, sales models, purchasing decisions, and ultimately the competitive landscape.âÂ 
+
+---ENDS---
+
+NOTE TO EDITORS
+
+To arrange an interview or for further information please contactÂ Claire BootyÂ on +44 (0) 20 7017 7916, or emailÂ claire.booty@ovum.com
+
+ABOUT OVUM
+
+Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions. Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.
+
+Â 
+
+Â 
+
+
+--b1_6723c77b93f59d694c9bd388a386ad8f
+Content-Type: text/html; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<p>
+			<span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">Oracle has announced its intent to acquire vendor Acme Packets. </span><strong style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">Dana Cooperson, principal analyst</strong><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"> believes the acquisition should strengthen Oracle&rsquo;s hand both with enterprises and carriers by giving it a more central role in controlling and improving how devices and subscribers interact and communicate.</span></p>
+		<p>
+			<strong style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">Cooperson comments:</strong></p>
+		<p>
+			<em style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">&ldquo;Oracle&rsquo;s move to acquire Acme Packets illustrates several very important on-going trends in global communications:</em></p>
+		<p style="text-indent:-18.0pt;">
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>&ldquo;IT and Telecom are rapidly blending:</em></strong><em> Telecom and IT are coming together in ways that are shifting the vendor competitive framework significantly. IT-focused companies like Oracle see a real opportunity to strengthen their position in both markets through extending their product lines and are acting aggressively. Companies that specialize in either telecom or IT will need a strategy of how they will benefit from this blending of what were two largely separate domains. Any vendor that wants to be a full-service partner to the telcos and other large communications and content providers will need such a blended strategy to be credible. Specialists will need to align with full-service partners.</em></span></span></p>
+		<p style="text-indent:-18.0pt;">
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>&ldquo;Software increasingly driving network capabilities: </em></strong><em>Although hardware is still important in many applications to provide needed performance, software is more and more critical for both differentiating and monetizing network capabilities. Performance without monetization is only half the equation.</em></span></span></p>
+		<p style="text-indent:-18.0pt;">
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>&ldquo;Communications needs are anytime, anywhere:</em></strong><em> People want to be connected, at work or at play, through a variety of devices and access means. Controlling these sessions securely and at the needed quality is increasingly critical.&rdquo;</em></span></span></p>
+		<p>
+			<strong style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">Cooperson added:</strong><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"> </span><em style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">&ldquo;Oracle Communications has a value proposition that encompasses telcos, enterprises, and other ICT (information and communications technology) infrastructure vendors. In fact, Oracle both sells to and competes with telecom infrastructure vendors. But unlike many of these companies, Oracle has a comparatively large bucket of cash to use for acquisitions&mdash; as a communications infrastructure vendor bested only by Cisco. Oracle and Cisco can both afford to be aggressive with M&amp;A whereas many of their peers cannot. Expect the buying spree to continue.&rdquo;</em></p>
+		<p>
+			<span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">Meanwhile according to research by </span><strong style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">Principal Analyst, Matt Walker</strong><span style="font-family: arial, helvetica, sans-serif; font-size: 11pt;"> telecom-centric vendors are having a tough time, again, as in the last several quarters they have seen margins decrease significantly; 4Q12 earnings issued to date have not reversed the trend:</span></p>
+		<p>
+			<em style="font-family: arial, helvetica, sans-serif; font-size: 11pt;">&ldquo;Even with some consolidation and extensive layoffs, several big vendors (e.g., Alcatel-Lucent) are hurting. A weak capex climate among service providers has worsened the outlook, as has the continued growth of Huawei. Ovum&rsquo;s latest forecast calls for telecom capex bumps in some country markets, but Chinese vendors are positioned well in many of these. In the near-term, vendor earnings should be watched closely, with an eye on both margins and cash conservation. In the longer-term, consolidation will help, but this is never easy; slow integration is the biggest challenge to this approach. Looking ahead to &ldquo;what you want to be when you grow up&rdquo; is a better approach as the IT and telecom worlds converge. This blending impacts network design, product choice, sales models, purchasing decisions, and ultimately the competitive landscape.&rdquo;&nbsp;</em></p>
+		<p>
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;">---ENDS---</span></span></p>
+		<p>
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;"><strong>NOTE TO EDITORS</strong></span></span></p>
+		<p>
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;">To arrange an interview or for further information please contact&nbsp;<strong>Claire Booty</strong>&nbsp;on +44 (0) 20 7017 7916, or email&nbsp;<a href="mailto:claire.booty@ovum.com">claire.booty@ovum.com</a></span></span></p>
+		<p>
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;"><a href="http://mediatlasei.prnewswire.com/Url.aspx?519746x4391421x3288935"><strong><span style="color: blue;">ABOUT OVUM</span></strong></a></span></span></p>
+		<p>
+			<span style="font-size:11pt;"><span style="font-family: arial, helvetica, sans-serif;">Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions. Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.</span></span></p>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+	</body>
+</html><img src="http://www.sentpressrelease.com/email/track/?hash=32bc3231b58ff81a5a224e5925d3b8566d032828824679c44f6e8e1d8f7f6fc9" alt="" />
+
+
+
+--b1_6723c77b93f59d694c9bd388a386ad8f--

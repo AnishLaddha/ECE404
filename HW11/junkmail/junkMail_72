@@ -1,0 +1,142 @@
+From bounce.151681606@gorkanadatabase.com Wed Feb 13 07:11:04 2013
+Received: from mx01.ecn.purdue.edu (mx01.ecn.purdue.edu [128.46.154.8])
+	by rvl4.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r1DCB4eS023950
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@rvl4.ecn.purdue.edu>; Wed, 13 Feb 2013 07:11:04 -0500 (EST)
+Received: from mailhub248.itcs.purdue.edu (mailhub248.itcs.purdue.edu [128.210.5.248])
+	by mx01.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r1DCAp5C006627
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@ecn.purdue.edu>; Wed, 13 Feb 2013 07:10:51 -0500
+Received: from mail1.bemta5.messagelabs.com (mail1.bemta5.messagelabs.com [195.245.231.130])
+	by mailhub248.itcs.purdue.edu (8.14.4/8.14.4/mta.smtp.purdue.edu) with ESMTP id r1DCAnDm028517
+	for <kak@purdue.edu>; Wed, 13 Feb 2013 07:10:50 -0500
+Received: from [85.158.139.19:59305] by server-10.bemta-5.messagelabs.com id 81/44-04697-9C28B115; Wed, 13 Feb 2013 12:10:49 +0000
+X-Env-Sender: bounce.151681606@gorkanadatabase.com
+X-Msg-Ref: server-9.tower-178.messagelabs.com!1360757448!29873331!1
+X-Originating-IP: [195.248.81.102]
+X-StarScan-Received:
+X-StarScan-Version: 6.7; banners=-,-,-
+X-VirusChecked: Checked
+Received: (qmail 6906 invoked from network); 13 Feb 2013 12:10:48 -0000
+Received: from unknown (HELO vmx-grk-mta02.durrants.co.uk) (195.248.81.102)
+  by server-9.tower-178.messagelabs.com with AES256-SHA encrypted SMTP; 13 Feb 2013 12:10:48 -0000
+Received: from [::1] (helo=localhost.localdomain)
+	by vmx-grk-mta02.durrants.co.uk with esmtp (Exim 4.71)
+	(envelope-from <bounce.151681606@gorkanadatabase.com>)
+	id 1U5bMd-00061z-41
+	for kak@purdue.edu; Wed, 13 Feb 2013 12:23:03 +0000
+Date: Wed, 13 Feb 2013 12:23:03 +0000
+To: Avinash Kak <kak@purdue.edu>
+From: "claire.booty@ovum.com" <claire.booty@ovum.com>
+Message-ID: <94c412470321e972da40d82084e898a8@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.0 (phpmailer.codeworxtech.com)
+Subject: Competition and investment in telecoms industry held back by
+ inconsistent regulatory frameworks
+X-mailqueue_sent_to_smtp_queue_datetime: Wed, 13 Feb 2013 12:23:03 +0000+
+X-mailqueue-entity_type: ACTIVITY
+X-mailqueue-entity_id: 959388
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_94c412470321e972da40d82084e898a8"
+X-PMX-Version: 5.5.9.388399
+X-PerlMx-Virus-Scanned: Yes
+X-ECN-MailServer-VirusScanned: by amavisd-new
+X-ECN-MailServer-Origination: mailhub248.itcs.purdue.edu [128.210.5.248]
+X-ECN-MailServer-SpamScanAdvice: DoNotScan
+
+
+--b1_94c412470321e972da40d82084e898a8
+Content-Type: text/plain; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+Ovumâs Regulatory Scorecard 2013 reveals huge disparities in regulatory environments worldwide
+
+For immediate release
+
+London, 13 February, 2013 â In the second iteration of its annual Regulatory Scorecard*, Ovum finds that competition and investment in the global telecoms industry is being held back by inconsistent regulatory frameworks.
+
+Having assessed and ranked the regulatory performance of 11 countries across three geographic areas, the global analyst firm noted that countries getting the worst ranks across the board were those with generally less competitive markets, and the lack of competition is often due to the uncertainty around the frameworks that are in place.
+
+âIn Japan and South Korea, for example, the relationship between the government and the regulator could be perceived as too close. Independence from political involvement is important in ensuring a credible NRA, whose decisions may be challenged through an effective appeals process,â said analyst James Robinson, co-author of the Scorecard.
+
+Although Ovumâs Scorecard highlights similarities between countries within the same geographic region, significant differences occur across regions in most areas of regulatory activity. For instance, the regulation of the wholesale fixed sector differs from country to country, and from region to region, mainly due to the varying uptake of copper- and fiber-based fixed broadband. Countries within the same region are often ranked very differently; for example, Mexico appears significantly below its counterparts in South and Central America for almost every respect of the regulatory environment.
+
+âWhile Colombia and Brazil are making progress in setting out a stable framework which reflects the industryâs developments, the regulatory process in Mexico appears confusing and slow. This inevitably leads to inefficiency in most areas of regulation,â said analyst Luca Schiavoni, the other co-author of the Scorecard.
+
+By contrast, spectrum policy is one area in which current best practice can be observed across most countries. As the volume of mobile data traffic has grown considerably over the past few years, many regulators have acted to liberalize certain spectrum bands from previous technological restrictions. Ovumâs Scorecard also notes that regulators are awarding more frequencies for the development of next-generation mobile broadband. âNo one country appears willing to be left out from the opportunities of 4G. This is particularly true in South and Central America, where mobile connections go a very long way toward getting people online,â concluded Schiavoni.
+
+Consumer protection is also now more important to regulators all over the world. As Ovumâs research shows, NRAs across Asia-Pacific, Europe, and South and Central America are aiming to guarantee a certain quality of service for usersâ Internet connections, and to ensure that those users can easily switch between providers. Nevertheless, some countries must still work to improve transparency, in particular concerning the advertising of broadband speeds and traffic management policies.
+
+---ENDS---
+
+NOTES TO EDITORS
+
+*Ovum Regulatory Scorecard 2013: Europe (Jan 2013)
+
+Ovum Regulatory Scorecard 2013: LATAM (Jan 2013)
+
+Ovum Regulatory Scorecard 2013: APAC (Jan 2013)
+
+To speak with Ovum or for more information, please contactÂ Claire BootyÂ on +44 (0) 20 7017 7916, or emailÂ claire.booty@ovum.com
+
+ABOUT OVUM
+
+Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions.Â Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.
+
+
+--b1_94c412470321e972da40d82084e898a8
+Content-Type: text/html; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+      <html xmlns:o="">
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<p>
+			<strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Ovum&rsquo;s Regulatory Scorecard 2013 reveals huge disparities in regulatory environments worldwide</span></strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><o:p></o:p></span></p>
+		<p>
+			<strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">For immediate release</span></strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><o:p></o:p></span></p>
+		<p>
+			<strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">London, 13 February, 2013 &ndash;</span></strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"> In the second iteration of its annual Regulatory Scorecard*, Ovum finds that competition and investment in the global telecoms industry is being held back by inconsistent regulatory frameworks.<o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">Having assessed and ranked the regulatory performance of 11 countries across three geographic areas, the global analyst firm noted that countries getting the worst ranks across the board were those with generally less competitive markets, and the lack of competition is often due to the uncertainty around the frameworks that are in place.<o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">&ldquo;In Japan and South Korea, for example, the relationship between the government and the regulator could be perceived as too close. Independence from political involvement is important in ensuring a credible NRA, whose decisions may be challenged through an effective appeals process,&rdquo; said analyst <a href="http://ovum.com/authors/james-robinson/" target="_blank"><font color="#0000ff">James Robinson</font></a>, co-author of the Scorecard.<o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">Although Ovum&rsquo;s Scorecard highlights similarities between countries within the same geographic region, significant differences occur across regions in most areas of regulatory activity. For instance, the regulation of the wholesale fixed sector differs from country to country, and from region to region, mainly due to the varying uptake of copper- and fiber-based fixed broadband. Countries within the same region are often ranked very differently; for example, Mexico appears significantly below its counterparts in South and Central America for almost every respect of the regulatory environment.<o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">&ldquo;While Colombia and Brazil are making progress in setting out a stable framework which reflects the industry&rsquo;s developments, the regulatory process in Mexico appears confusing and slow. This inevitably leads to inefficiency in most areas of regulation,&rdquo; said analyst <a href="http://ovum.com/authors/luca-schiavoni/" target="_blank"><font color="#0000ff">Luca Schiavoni</font></a>, the other co-author of the Scorecard.<o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">By contrast, spectrum policy is one area in which current best practice can be observed across most countries. As the volume of mobile data traffic has grown considerably over the past few years, many regulators have acted to liberalize certain spectrum bands from previous technological restrictions. Ovum&rsquo;s Scorecard also notes that regulators are awarding more frequencies for the development of next-generation mobile broadband. &ldquo;No one country appears willing to be left out from the opportunities of 4G. This is particularly true in South and Central America, where mobile connections go a very long way toward getting people online,&rdquo; concluded Schiavoni.<o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">Consumer protection is also now more important to regulators all over the world. As Ovum&rsquo;s research shows, NRAs across Asia-Pacific, Europe, and South and Central America are aiming to guarantee a certain quality of service for users&rsquo; Internet connections, and to ensure that those users can easily switch between providers. Nevertheless, some countries must still work to improve transparency, in particular concerning the advertising of broadband speeds and traffic management policies.<o:p></o:p></span></p>
+		<p>
+			<strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">---ENDS---</span></strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><o:p></o:p></span></p>
+		<p>
+			<strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">NOTES TO EDITORS</span></strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><a href="http://ovum.com/research/regulatory-scorecard-2013-europe/" target="_blank"><strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><font color="#0000ff">*Ovum Regulatory Scorecard 2013: Europe (Jan 2013)</font></span></strong></a><o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><a href="http://ovum.com/research/regulatory-scorecard-2013-latam/" target="_blank"><strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><font color="#0000ff">Ovum Regulatory Scorecard 2013: LATAM (Jan 2013)</font></span></strong></a><o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><a href="http://ovum.com/research/regulatory-scorecard-2013-apac/" target="_blank"><strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><font color="#0000ff">Ovum Regulatory Scorecard 2013: APAC (Jan 2013)</font></span></strong></a><o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">To speak with Ovum or for more information, please contact&nbsp;<strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;">Claire Booty</span></strong>&nbsp;on +44 (0) 20 7017 7916, or email&nbsp;<a href="mailto:claire.booty@ovum.com"><font color="#0000ff">claire.booty@ovum.com</font></a><o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;"><a href="http://ovum.com/about-ovum/" target="_blank"><strong><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><font color="#0000ff">ABOUT OVUM</font></span></strong></a><o:p></o:p></span></p>
+		<p>
+			<span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;; font-size: 10pt;">Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions.&nbsp;Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.<o:p></o:p></span></p>
+	</body>
+</html><img src="http://www.sentpressrelease.com/email/track/?hash=4ddd5a5d57a101a1ea9724f2eaf20e3b261c01cb12bc2932faf4ee0238e4902e" alt="" /></body></html>
+
+
+
+--b1_94c412470321e972da40d82084e898a8--

@@ -1,0 +1,44 @@
+SHELL=/bin/sh
+PATH=/usr/local/lib/mh:$PATH
+MAILDIR=$HOME/Mail
+LOGFILE=$HOME/Mail/logfile
+SENDMAIL=/usr/sbin/sendmail
+#VERBOSE=1
+VERBOSE=0
+EOL="
+"
+LOG="$EOL$EOL$EOL"
+LOG="New message log:$EOL"
+LOG=`perl GET_MESSAGE_INDEX`
+LOG="$EOL"
+
+##### MY RECIPES
+
+## Recipe 1 start
+:0 :
+* ^From.*<*@*>,
+recipe_1
+##Recipe 1 end
+
+## Recipe 2 start
+:0 :
+* ^Subject.*([dD]iploma|[dD]egree|[mM]edication|[vV][ij]a[qg][rR]+a|[bB]uy|[hH]ostway)
+recipe_2
+## Recipe 2 end
+
+## Recipe 3 start
+:0 B:
+* (casino|gold) 
+recipe_3
+
+## Recipe 3 end
+
+##Recipe 4 start
+:0 HB:
+* ^Content-Type: text/plain
+* ^Content-Type: text/html
+recipe_4
+##Recipe 4 end
+
+
+##### END MY RECIPES

@@ -1,0 +1,117 @@
+From bounce.149914612@gorkanadatabase.com Tue Feb  5 11:31:58 2013
+Received: from mx01.ecn.purdue.edu (mx01.ecn.purdue.edu [128.46.154.8])
+	by rvl4.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r15GVvc4001072
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@rvl4.ecn.purdue.edu>; Tue, 5 Feb 2013 11:31:57 -0500 (EST)
+Received: from mailhub245.itcs.purdue.edu (mailhub245.itcs.purdue.edu [128.210.5.245])
+	by mx01.ecn.purdue.edu (8.14.4/8.14.4) with ESMTP id r15GUrZw006791
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for <kak@ecn.purdue.edu>; Tue, 5 Feb 2013 11:30:54 -0500
+Received: from mail1.bemta5.messagelabs.com (mail1.bemta5.messagelabs.com [195.245.231.130])
+	by mailhub245.itcs.purdue.edu (8.14.4/8.14.4/mta.smtp.purdue.edu) with ESMTP id r15GUqRT027663
+	for <kak@purdue.edu>; Tue, 5 Feb 2013 11:30:53 -0500
+Received: from [85.158.139.19:58269] by server-8.bemta-5.messagelabs.com id 1B/EE-19075-BB331115; Tue, 05 Feb 2013 16:30:51 +0000
+X-Env-Sender: bounce.149914612@gorkanadatabase.com
+X-Msg-Ref: server-8.tower-178.messagelabs.com!1360081846!25487965!1
+X-Originating-IP: [195.248.81.102]
+X-StarScan-Received:
+X-StarScan-Version: 6.7; banners=-,-,-
+X-VirusChecked: Checked
+Received: (qmail 26823 invoked from network); 5 Feb 2013 16:30:46 -0000
+Received: from unknown (HELO vmx-grk-mta02.durrants.co.uk) (195.248.81.102)
+  by server-8.tower-178.messagelabs.com with AES256-SHA encrypted SMTP; 5 Feb 2013 16:30:46 -0000
+Received: from [::1] (helo=localhost.localdomain)
+	by vmx-grk-mta02.durrants.co.uk with esmtp (Exim 4.71)
+	(envelope-from <bounce.149914612@gorkanadatabase.com>)
+	id 1U2lbX-0007Su-J8
+	for kak@purdue.edu; Tue, 05 Feb 2013 16:42:43 +0000
+Date: Tue, 5 Feb 2013 16:42:43 +0000
+To: Avinash Kak <kak@purdue.edu>
+From: "claire.booty@ovum.com" <claire.booty@ovum.com>
+Message-ID: <f4e4fe628c326dabee16032358e76e74@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.0 (phpmailer.codeworxtech.com)
+Subject: Ovum comments: Dell Going Private will Generate Uncertainty for
+ CIOs
+X-mailqueue_sent_to_smtp_queue_datetime: Tue, 05 Feb 2013 16:42:43 +0000+
+X-mailqueue-entity_type: ACTIVITY
+X-mailqueue-entity_id: 957544
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_f4e4fe628c326dabee16032358e76e74"
+X-PMX-Version: 5.5.9.388399
+X-PerlMx-Virus-Scanned: Yes
+X-ECN-MailServer-VirusScanned: by amavisd-new
+X-ECN-MailServer-Origination: mailhub245.itcs.purdue.edu [128.210.5.245]
+X-ECN-MailServer-SpamScanAdvice: DoNotScan
+
+
+--b1_f4e4fe628c326dabee16032358e76e74
+Content-Type: text/plain; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+Dell is on its way to open a new chapter in the IT industry by taking the company private. A move, which according to Carter Lusher, chief IT analyst at Ovum, makes strategic sense:
+
+âDell is in the midst of a wrenching transition from a supplier of commodity hardware, mainly traditional PCs, to being a supplier of enterprise-grade IT infrastructure. Dellâs ambition is nothing less than offering the entire IT stack with supporting services. A significant risk likely to face Dell during this transition is that enterprises and public sector organizations cut back on their purchases âuntil the dust settles.â
+
+âThe implication of going private is that Dell is planning radical changes to its strategy and product roadmap. While the company might come out of this transition stronger with a product lineup that better meets the needs of businesses and public sector organizations, there will be uncertainty as to what products and services stay, get strengthen, or get eliminated.Â  
+
+âOvum sees effective communication to prospects and customers about its strategy and product roadmap as a, if not the, critical success factor to get through the transition. While this might sound simple it is not. Compounding Dellâs challenge is the deep seated brand identity as a âPC company.âÂ  Another communications challenge will be how Dell Services (built on the Perot acquisition) shares its financials for the due diligence phase on large, multi-year IT services deals.
+
+âOvum recommends that CIOs need to asset the risk to their infrastructure and put into place plans should Dellâs radical hardware, software, and services shifts require changes to procurement plans.â
+
+---ENDS---
+
+To arrange an interview or for further information please contactÂ Claire BootyÂ on +44 (0) 20 7017 7916, or emailÂ claire.booty@ovum.com
+
+ABOUT OVUM
+
+Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions. Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.
+
+Â 
+
+Â 
+
+Â 
+
+
+--b1_f4e4fe628c326dabee16032358e76e74
+Content-Type: text/html; charset = "utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<p>
+			<span style="font-size: 11pt; font-family: calibri, sans-serif;">Dell is on its way to open a new chapter in the IT industry by taking the company private. A move, which according to Carter Lusher, chief IT analyst at Ovum, makes strategic sense:</span></p>
+		<p style="margin-bottom:12.0pt;line-height:115%;">
+			<em><span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">&ldquo;Dell is in the midst of a wrenching transition from a supplier of commodity hardware, mainly traditional PCs, to being a supplier of enterprise-grade IT infrastructure. Dell&rsquo;s ambition is nothing less than offering the entire IT stack with supporting services. A significant risk likely to face Dell during this transition is that enterprises and public sector organizations cut back on their purchases &ldquo;until the dust settles.&rdquo;</span></span></em></p>
+		<p style="margin-bottom:12.0pt;line-height:115%;">
+			<em><span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">&ldquo;The implication of going private is that Dell is planning radical changes to its strategy and product roadmap. While the company might come out of this transition stronger with a product lineup that better meets the needs of businesses and public sector organizations, there will be uncertainty as to what products and services stay, get strengthen, or get eliminated.&nbsp; </span></span></em></p>
+		<p style="margin-bottom:12.0pt;line-height:115%;">
+			<em><span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">&ldquo;Ovum sees effective communication to prospects and customers about its strategy and product roadmap as a, if not the, critical success factor to get through the transition. While this might sound simple it is not. Compounding Dell&rsquo;s challenge is the deep seated brand identity as a &ldquo;PC company.&rdquo;&nbsp; Another communications challenge will be how Dell Services (built on the Perot acquisition) shares its financials for the due diligence phase on large, multi-year IT services deals.</span></span></em></p>
+		<p style="margin-bottom:12.0pt;line-height:115%;">
+			<em><span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">&ldquo;Ovum recommends that CIOs need to asset the risk to their infrastructure and put into place plans should Dell&rsquo;s radical hardware, software, and services shifts require changes to procurement plans.&rdquo;</span></span></em></p>
+		<p>
+			<span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">---ENDS---</span></span></p>
+		<p>
+			<span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">To arrange an interview or for further information please contact&nbsp;<strong>Claire Booty</strong>&nbsp;on +44 (0) 20 7017 7916, or email&nbsp;</span></span><a href="mailto:claire.booty@ovum.com"><span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">claire.booty@ovum.com</span></span></a></p>
+		<p>
+			<a href="http://mediatlasei.prnewswire.com/Url.aspx?519746x4391421x3288935"><strong><span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">ABOUT OVUM</span></span></strong></a></p>
+		<p>
+			<span style="font-family:calibri,sans-serif;"><span style="font-size:11.0pt;">Jointly awarded IIAR Global Analyst of the Year 2012, Ovum provides clients with independent and objective analysis that enables them to make better business and technology decisions. Its research draws upon over 400,000 interviews each year with business and technology, telecoms and sourcing decision-makers, giving Ovum and its clients unparalleled insight, not only into business requirements but also the technology that organizations must support. Ovum is an Informa business.</span></span></p>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+	</body>
+</html><img src="http://www.sentpressrelease.com/email/track/?hash=e4f86f15f6baac4d7f816297aca407de6fc6055fca74f03e90b8ce500bf405b0" alt="" />
+
+
+
+--b1_f4e4fe628c326dabee16032358e76e74--
+
